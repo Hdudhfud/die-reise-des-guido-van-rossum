@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Python – Die Reise von Guido van Rossum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #6366f1;
+            --bg: #0f172a;
+            --card: #111827;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: linear-gradient(180deg, #020617, #0f172a);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* --- FEEDBACK BUTTON --- */
+        .top-bar {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+        }
+
+        .feedback-btn {
+            padding: 12px 22px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #6366f1, #4f46e5);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 10px 25px rgba(79,70,229,0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .feedback-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(79,70,229,0.6);
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: clamp(3rem, 6vw, 5rem);
+            background: linear-gradient(90deg, #60a5fa, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: var(--muted);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+            display: grid;
+            gap: 40px;
+        }
+
+        section {
+            background: linear-gradient(180deg, #020617, var(--card));
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #93c5fd;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        ul li {
+            padding-left: 25px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "›";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-size: 1.4rem;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--secondary);
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #c7d2fe;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+
+    <!-- FEEDBACK BUTTON -->
+    <div class="top-bar">
+        <a href="feedback.html" class="feedback-btn">FEEDBACK SEITE !!!</a>
+    </div>
+
+    <div>
+        <h1>Python</h1>
+        <p>Die Reise von Guido van Rossum</p>
+    </div>
+
+</header>
+
+<main>
+
+    <section>
+        <h2>Wer ist Guido van Rossum?</h2>
+        <p>
+            Guido van Rossum ist der Erfinder der Programmiersprache Python.
+            Er wurde 1956 in den Niederlanden geboren und entwickelte Python
+            Ende der 1980er Jahre. Der erste Release von Python erschien 1991.
+        </p>
+        <p>
+            Lange Zeit war er als „Benevolent Dictator For Life (BDFL)“ bekannt.
+            Er arbeitete unter anderem bei Google, Dropbox und Microsoft und gilt
+            als eine der einflussreichsten Personen der Softwareentwicklung.
+        </p>
+    </section>
+
+    <section>
+        <h2>Vom frühen Interesse zur Ikone</h2>
+        <p>
+            Schon in jungen Jahren entdeckte Guido van Rossum sein Interesse an Computern
+            und entwickelte eigene Minigames wie einen Snake-Klon.
+        </p>
+        <p>
+            Später begann er seine Laufbahn bei Google und arbeitete danach selbstständig
+            als Softwareentwickler, wobei Python immer weiterentwickelt wurde.
+        </p>
+    </section>
+
+    <section>
+        <h2>Was ist Python?</h2>
+        <p>
+            Python ist eine Programmiersprache, mit der man Programme, Webseiten,
+            Spiele, Künstliche Intelligenz und Automatisierungen erstellen kann.
+        </p>
+        <p>
+            Python ist leicht zu lernen, aber schwer zu meistern, besonders bei großen
+            und komplexen Projekten. Im Jahr 2025 verwenden über 151.000 Unternehmen
+            weltweit Python in ihren Software-Stacks.
+        </p>
+    </section>
+
+    <section>
+        <h2>Wofür wird Python genutzt?</h2>
+        <ul>
+            <li>Web- und Backend-Entwicklung</li>
+            <li>Datenanalyse / Big Data</li>
+            <li>Künstliche Intelligenz & Machine Learning</li>
+            <li>Automatisierung von Abläufen</li>
+            <li>DevOps-Tools, Skripting & Forschung</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Aber warum Python?</h2>
+        <blockquote>
+            "There should be one, and preferably one, obvious way to do it."
+        </blockquote>
+        <blockquote>
+            „Es sollte einen, und vorzugsweise einen, offensichtlichen Weg geben, es zu tun.“
+        </blockquote>
+    </section>
+
+    <section>
+        <h2>Was Python sein soll</h2>
+        <ul>
+            <li>Eine einfache und intuitive Sprache</li>
+            <li>Open Source, sodass jeder bei der Entwicklung helfen kann</li>
+            <li>Quelltext, der so leicht zu lesen ist wie reines Englisch</li>
+            <li>Geeignet für tägliche Aufgaben und kurze Entwicklungszeiten</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>VIELEN DANK!</p>
+   
+</footer>
+
+</body>
+</html>
